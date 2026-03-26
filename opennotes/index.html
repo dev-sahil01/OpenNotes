@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenNotes | Free Study Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">OpenNotes</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Notes</a>
+        <a href="Llinks.html">Important links</a>
+        <a href="results.html">Results</a>
+        <a href="explore.html">Explore</a>
+    </nav>
+</header>
+
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Welcome to OpenNotes</h1>
+    <p>Your Free Educational Resource Hub</p>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section light">
+    <h2>Why OpenNotes?</h2>
+    <p>OpenNotes provides free study materials from Class 8th to University level. Access notes, PDFs, syllabus updates, results, and much more — all in one place.</p>
+</section>
+<section class="marquee-section">
+
+    <!-- hidden checkbox controller -->
+    <input type="checkbox" id="pauseToggle">
+
+    <div class="marquee-header">
+
+        🔔 Latest Updates
+
+        <label for="pauseToggle" class="pause-btn">
+            ⏸ / ▶
+        </label>
+
+    </div>
+
+    <div class="marquee-box">
+
+        <div class="marquee-content">
+
+            <span>📢 JKBOSE Results Declared</span>
+            <span> CUET 2026 Registration Started</span>
+            <span> New Physics Notes Uploaded</span>
+            <span> Semester Datesheet Available</span>
+
+            <!-- duplicate content for infinite loop -->
+            <span>📢 JKBOSE Results Declared</span>
+            <span> CUET 2026 Registration Started</span>
+            <span> New Physics Notes Uploaded</span>
+            <span> Semester Datesheet Available</span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="future-announcements">
+
+    <div class="future-header">
+        📢 Latest Announcements
+    </div>
+
+    <div class="future-box">
+
+        <div class="future-track" id="announcementTrack"></div>
+
+    </div>
+
+    <div class="controls">
+
+        <button onclick="pauseTicker()">⏸ Pause</button>
+        <button onclick="playTicker()">▶ Play</button>
+
+    </div>
+    <section class="search-section">
+
+    <h2>🔎 Search Study Material</h2>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search notes, assignments, guess papers..."
+        onkeyup="searchNotes()"
+    >
+
+</section>
+    <section class="notes-section">
+
+    <h2 class="notes-title">📚 Study Notes & Materials</h2>
+
+    <div class="notes-container">
+
+        <a href="JK.pdf" class="note-card">
+            Class 10 Notes
+        </a>
+
+        <a href="https://docs.google.com/document/d/12YHzayyn5ooaWJOTB5yOxr39eYpTb6Dx/edit?usp=drive_link&ouid=104850196760501774950&rtpof=true&sd=true" class="note-card">
+            Class 12 Notes google drive
+        </a>
+
+        <a href="notes.html?sem=1" class="note-card">
+            BCS Semester 1
+        </a>
+
+        <a href="notes.html?sem=2" class="note-card">
+            BCS Semester 2
+        </a>
+
+        <a href="notes.html?sem=3" class="note-card">
+            BCS Semester 3
+        </a>
+
+        <a href="notes.html?sem=4" class="note-card">
+            BCS Semester 4
+        </a>
+
+        <a href="notes.html?sem=5" class="note-card">
+            BCS Semester 5
+        </a>
+
+        <a href="notes.html?sem=6" class="note-card">
+            BCS Semester 6
+        </a>
+
+        <a href="assignments.html" class="note-card">
+            Assignments
+        </a>
+
+        <a href="guesspapers.html" class="note-card">
+            Guess Papers
+        </a>
+
+    </div>
+
+</section>
+
+</section>
+<!-- COURSES SECTION -->
+<section class="section dark">
+    <h2>Classes & Courses</h2>
+    <ul>
+        <li>Class 8th – 12th Notes</li>
+        <li>JKBOSE Updates</li>
+        <li>CBSE Resources</li>
+        <li>University of Kashmir Materials</li>
+        <li>Entrance Exam Preparation</li>
+        <li><a href="https://www.cusrinagar.edu.in/Syllabus/Index/True?pp=UG">CLUSTER University Srinagar all courses syllabus</a></li>
+    </ul>
+</section>
+
+<section class="timetable-section">
+
+    <h2 class="timetable-title">
+        📅 Latest Timetable & Datesheets
+    </h2>
+
+    <div class="timetable-container">
+
+        <div class="timetable-card">
+
+            <h3>BCS Semester Datesheet</h3>
+
+            <p>
+                Download the latest semester exam schedule.
+            </p>
+
+            <a href="#" class="timetable-btn">
+                View Datesheet
+            </a>
+
+        </div>
+
+
+        <div class="timetable-card">
+
+            <h3>Class 12 Datesheet</h3>
+
+            <p>
+                Check JKBOSE Class 12 examination schedule.
+            </p>
+
+            <a href="#" class="timetable-btn">
+                View Datesheet
+            </a>
+
+        </div>
+
+
+        <div class="timetable-card">
+
+            <h3>Class 10 Datesheet</h3>
+
+            <p>
+                Check JKBOSE Class 10 examination schedule.
+            </p>
+
+            <a href="#" class="timetable-btn">
+                View Datesheet
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stat-box">
+            <h2>1200+</h2>
+            <p>Notes Available</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>350+</h2>
+            <p>Students Using Platform</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>80+</h2>
+            <p>Subjects Covered</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>25+</h2>
+            <p>Teachers Contributions</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-links">
+        <h3><u>Imortant Links</u></h3>
+        <div class="link-grid">
+            <a href="https://www.jkbose.nic.in/" target="_blank">JKBOSE</a>
+            <a href="https://www.cbse.gov.in/" target="_blank">CBSE</a>
+            <a href="https://www.ncert.nic.in/" target="_blank">NCERT</a>
+            <a href="https://www.ugc.gov.in/" target="_blank">UGC</a>
+            <a href="https://www.aicte-india.org/" target="_blank">AICTE</a>
+            <a href="https://www.kashmiruniversity.net/" target="_blank">University of Kashmir</a>
+            <a href="https://cuet.samarth.ac.in/" target="_blank">CUET</a>
+            <a href="https://jeemain.nta.nic.in/" target="_blank">JEE Main</a>
+            <a href="https://neet.nta.nic.in/" target="_blank">NEET</a>
+            <a href="https://ndl.iitkgp.ac.in/" target="_blank">National Digital Library</a>
+            <a href="https://www.cusrinagar.edu.in/" target="_blank">Cluster University Srinagar</a>
+            <a href="https://directorcollegesjk.in/" target="_blank">Directorate of Colleges jk</a>
+            <a href="https://www.iust.ac.in/" target="_blank">IUST JK</a>
+             <a href="https://www.jammuuniversity.ac.in/" target="_blank">Jammu University</a>
+              <a href="https://jkhed.nic.in" target="_blank">Higher Education Department JK</a>
+
+        </div>
+    </div>
+
+    <p class="copyright">
+        © 2026 OpenNotes. All rights are reserved.<br>
+        Website Developed by Mohammad Sahil.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

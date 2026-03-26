@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+/* NAVBAR */
+.navbar {
+    background: orangered;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* MARQUEE */
+.marquee {
+    background: #ffefc2;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 60vh;
+
+background: url("pic.jpg");
+
+background-size: cover;
+
+background-position: center;
+
+background-repeat: no-repeat;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: center;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    background: orange;
+}
+
+.light {
+    background: white;
+}
+
+.dark {
+    background: #e9ecef;
+}
+
+/* ANNOUNCEMENTS */
+.announcement-section {
+    padding: 80px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.announcement-box {
+    height: 220px;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    border-left: 6px solid #4b6cb7;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.announcement-content {
+    padding: 15px;
+    animation: scrollUp 15s linear infinite;
+}
+
+.announcement-content p {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.announcement-content a {
+    text-decoration: none;
+    color: #4b6cb7;
+}
+
+/* SCROLL ANIMATION */
+@keyframes scrollUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+/* FOOTER */
+footer {
+    background: #182848;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.link-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.link-grid a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer {
+    background: #182848;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.link-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.link-grid a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+/* CENTERED COPYRIGHT */
+.copyright {
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.notice-board {
+
+    width: 320px;
+    margin: auto;
+    font-family: Arial;
+
+}
+
+.notice-title {
+
+    background: #ff7a00;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.notice-container {
+
+    height: 200px;
+    overflow: hidden;
+
+    border: 2px solid #ff7a00;
+
+    background:
+    repeating-linear-gradient(
+        45deg,
+        #fff3e6,
+        #fff3e6 10px,
+        #ffe0bf 10px,
+        #ffe0bf 20px
+    );
+
+    position: relative;
+
+}
+
+.notice-list {
+
+    position: absolute;
+    width: 100%;
+
+}
+
+.notice-list p {
+
+    padding: 10px;
+    margin: 0;
+
+}
+
+.notice-list a {
+
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.notice-list a:hover {
+
+    color: darkorange;
+
+}.future-announcements {
+
+    width: 380px;
+    margin: auto;
+    font-family: Segoe UI;
+
+}
+
+.future-header {
+
+    padding: 14px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+
+    background: linear-gradient(
+        270deg,
+        #ff7a00,
+        #ff0055,
+        #7a00ff
+    );
+
+    background-size: 400% 400%;
+
+    animation: headerMove 6s infinite;
+
+}
+
+@keyframes headerMove {
+
+0% {background-position:0%}
+50% {background-position:100%}
+100% {background-position:0%}
+
+}
+
+.future-box {
+
+    height: 200px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+}
+
+.future-track {
+
+    position: absolute;
+
+    width: 100%;
+
+}
+
+.future-track p {
+
+    padding: 12px;
+
+    margin: 0;
+
+    transition: 0.3s;
+
+}
+
+.future-track a {
+
+    color: #ff4d4d;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+.future-track p:hover {
+
+    background: rgba(255,255,255,0.15);
+
+}
+
+.controls {
+
+    margin-top: 10px;
+
+}
+
+.controls button {
+
+    padding: 6px 14px;
+
+    margin-right: 6px;
+
+    border: none;
+
+    background: #ff7a00;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+.marquee-section {
+
+    width: 100%;
+    font-family: Segoe UI;
+
+}
+
+/* header */
+
+.marquee-header {
+
+    background: linear-gradient(90deg,#ff7a00,#ff0055);
+    color: white;
+
+    padding: 10px;
+
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* pause button */
+
+.pause-btn {
+
+    cursor: pointer;
+    background: white;
+    color: #ff0055;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+
+}
+
+/* hide checkbox */
+
+#pauseToggle {
+
+    display: none;
+
+}
+
+/* marquee container */
+
+.marquee-box {
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    border: 2px solid #ff7a00;
+
+    background: #fff6ef;
+
+}
+
+/* moving text */
+
+.marquee-content {
+
+    display: inline-block;
+
+    padding-left: 100%;
+
+    animation: scrollLeft 40s linear infinite;
+
+}
+
+/* pause when hover */
+
+.marquee-box:hover .marquee-content {
+
+    animation-play-state: paused;
+
+}
+
+/* pause when button clicked */
+
+#pauseToggle:checked ~ .marquee-box .marquee-content {
+
+    animation-play-state: paused;
+
+}
+
+/* spacing */
+
+.marquee-content span {
+
+    margin-right: 60px;
+
+    color: red;
+
+    font-weight: bold;
+
+}
+
+/* animation */
+
+@keyframes scrollLeft {
+
+    0% {
+
+        transform: translateX(0);
+
+    }
+
+    100% {
+
+        transform: translateX(-50%);
+
+    }
+
+}
+.notes-section {
+
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Segoe UI;
+
+}
+
+.notes-title {
+
+    font-size: 28px;
+    margin-bottom: 30px;
+
+    background: linear-gradient(90deg,#ff7a00,#ff0055);
+    color: white;
+
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+.notes-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+/* card design */
+
+.note-card {
+
+    padding: 40px 20px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #333;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+    transition: 0.4s;
+
+}
+
+/* hover animation */
+
+.note-card:hover {
+
+    transform: translateY(-8px) scale(1.05);
+
+    background: linear-gradient(90deg,#ff7a00,#ff0055);
+
+    color: white;
+
+}
+.search-section {
+
+    text-align: center;
+    margin: 40px 0;
+
+}
+
+#searchInput {
+
+    width: 60%;
+    max-width: 500px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 2px solid orange;
+
+    font-size: 16px;
+
+}
+.timetable-section {
+
+    padding: 40px 20px;
+    text-align: center;
+
+}
+
+.timetable-title {
+
+    font-size: 28px;
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg,#ff7a00,#ff0055);
+    color: white;
+
+    display: inline-block;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+}
+
+.timetable-container {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.timetable-card {
+
+    background:
+    rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.2);
+
+    transition: 0.4s;
+
+}
+
+.timetable-card:hover {
+
+    transform:
+    translateY(-6px) scale(1.04);
+
+}
+
+.timetable-btn {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 8px 16px;
+
+    background:
+    linear-gradient(90deg,#ff7a00,#ff0055);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+}
+.stats-section {
+
+    padding: 50px 20px;
+
+    background:
+    linear-gradient(90deg,#ff7a00,#ff0055);
+
+}
+
+.stats-container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap: 25px;
+
+}
+
+.stat-box {
+
+    background:
+    rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    color: white;
+
+    transition: 0.4s;
+
+}
+
+.stat-box:hover {
+
+    transform:
+    translateY(-8px) scale(1.05);
+
+}
+
+.stat-box h2 {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+}
+
+.stat-box p {
+
+    font-size: 16px;
+
+}

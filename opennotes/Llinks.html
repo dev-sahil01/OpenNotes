@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Important links</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI;
+background:#f5f7fb;
+transition:.3s;
+}
+
+/* HEADER */
+
+header{
+background:#8a4d1e;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header button{
+padding:6px 12px;
+border:none;
+background:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* LAYOUT */
+
+.main{
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:220px;
+background:white;
+height:100vh;
+padding:15px;
+box-shadow:2px 0px 6px rgba(0,0,0,0.1);
+}
+
+.sidebar a{
+display:block;
+padding:8px;
+color:#333;
+text-decoration:none;
+margin-bottom:6px;
+border-radius:6px;
+}
+
+.sidebar a:hover{
+background:#1e3a8a;
+color:white;
+}
+
+/* CONTENT */
+
+.content{
+flex:1;
+padding:20px;
+}
+
+/* SEARCH */
+
+#search{
+width:100%;
+padding:10px;
+margin-bottom:20px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+/* CARDS */
+
+.section{
+background:white;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0px 3px 8px rgba(0,0,0,0.08);
+}
+
+.section h2{
+color:#1e3a8a;
+}
+
+/* LINKS */
+
+.section a{
+display:block;
+padding:6px;
+color:#444;
+text-decoration:none;
+}
+
+.section a:hover{
+color:#1e3a8a;
+font-weight:bold;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .sidebar{
+background:#1b1b1b;
+}
+
+.dark .section{
+background:#222;
+}
+
+.dark a{
+color:#ddd;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h2>📚 Important links</h2>
+<a href="index.html"
+style="
+color:white;
+margin-right:15px;
+text-decoration:none;
+font-weight:bold;
+">
+⬅ Go back to Home page
+</a>
+
+
+<button onclick="toggleDark()">🌙 Dark Mode</button>
+
+</header>
+
+
+<div class="main">
+
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<a href="#jk">J&K Boards</a>
+<a href="#uni">Universities</a>
+<a href="#exam">Entrance Exams</a>
+<a href="#scholar">Scholarships</a>
+<a href="#jobs">Government Jobs</a>
+<a href="#study">Study Material</a>
+<a href="#coding">Coding</a>
+<a href="#tools">Student Tools</a>
+<a href="#courses">Online Courses</a>
+
+</div>
+
+
+<!-- CONTENT -->
+
+<div class="content">
+
+<input
+type="text"
+id="search"
+placeholder="🔎 Search links..."
+onkeyup="searchLinks()"
+>
+
+
+
+<!-- JK SECTION -->
+
+<div class="section" id="jk">
+
+<h2>📍 Jammu & Kashmir Boards</h2>
+
+<a href="https://jkbose.nic.in">JKBOSE</a>
+<a href="https://jkscert.nic.in">JKSCERT</a>
+<a href="https://jkhed.nic.in">Higher Education Dept</a>
+<a href="https://jkbopee.gov.in">JKBOPEE</a>
+<a href="https://jkpsc.nic.in">JKPSC</a>
+<a href="https://jkssb.nic.in">JKSSB</a>
+
+</div>
+
+
+
+<!-- UNIVERSITIES -->
+
+<div class="section" id="uni">
+
+<h2>🏫 Universities</h2>
+
+<a href="https://kashmiruniversity.net">University of Kashmir</a>
+<a href="https://cusrinagar.edu.in">Cluster University Srinagar</a>
+<a href="https://iust.ac.in">IUST</a>
+<a href="https://cukashmir.ac.in">Central University Kashmir</a>
+<a href="https://jammuuniversity.ac.in">University Jammu</a>
+<a href="https://skuastkashmir.ac.in">SKUAST Kashmir</a>
+<a href="https://bgsbu.ac.in">BGSBU Rajouri</a>
+
+</div>
+
+
+
+<!-- EXAMS -->
+
+<div class="section" id="exam">
+
+<h2>🧠 Entrance Exams</h2>
+
+<a href="https://nta.ac.in">NTA</a>
+<a href="https://jeemain.nta.nic.in">JEE Main</a>
+<a href="https://neet.nta.nic.in">NEET</a>
+<a href="https://cuet.samarth.ac.in">CUET</a>
+<a href="https://gate.iitk.ac.in">GATE</a>
+
+</div>
+
+
+
+<!-- SCHOLARSHIPS -->
+
+<div class="section" id="scholar">
+
+<h2>💰 Scholarships</h2>
+
+<a href="https://scholarships.gov.in">National Scholarship Portal</a>
+<a href="https://jkdswd.in">JK Social Welfare</a>
+<a href="https://ugc.gov.in">UGC</a>
+<a href="https://aicte-india.org">AICTE</a>
+
+</div>
+
+
+
+<!-- JOBS -->
+
+<div class="section" id="jobs">
+
+<h2>💼 Government Jobs</h2>
+
+<a href="https://ssc.nic.in">SSC</a>
+<a href="https://upsc.gov.in">UPSC</a>
+<a href="https://joinindianarmy.nic.in">Indian Army</a>
+<a href="https://joinindiannavy.gov.in">Indian Navy</a>
+<a href="https://careerindianairforce.cdac.in">Indian Air Force</a>
+<a href="https://indianrailways.gov.in">Railways</a>
+
+</div>
+
+
+
+<!-- STUDY MATERIAL -->
+
+<div class="section" id="study">
+
+<h2>📖 Study Material</h2>
+
+<a href="https://ncert.nic.in">NCERT</a>
+<a href="https://epathshala.nic.in">ePathshala</a>
+<a href="https://diksha.gov.in">DIKSHA</a>
+<a href="https://khanacademy.org">Khan Academy</a>
+<a href="https://toppr.com">Toppr</a>
+<a href="https://vedantu.com">Vedantu</a>
+
+</div>
+
+
+
+<!-- CODING -->
+
+<div class="section" id="coding">
+
+<h2>💻 Coding Resources</h2>
+
+<a href="https://w3schools.com">W3Schools</a>
+<a href="https://geeksforgeeks.org">GeeksforGeeks</a>
+<a href="https://freecodecamp.org">FreeCodeCamp</a>
+<a href="https://developer.mozilla.org">MDN Docs</a>
+<a href="https://github.com">GitHub</a>
+<a href="https://replit.com">Replit</a>
+
+</div>
+
+
+
+<!-- TOOLS -->
+
+<div class="section" id="tools">
+
+<h2>🛠 Student Tools</h2>
+
+<a href="https://translate.google.com">Google Translate</a>
+<a href="https://grammarly.com">Grammarly</a>
+<a href="https://canva.com">Canva</a>
+<a href="https://smallpdf.com">SmallPDF</a>
+<a href="https://ilovepdf.com">iLovePDF</a>
+<a href="https://remove.bg">RemoveBG</a>
+
+</div>
+
+
+
+<!-- COURSES -->
+
+<div class="section" id="courses">
+
+<h2>🎓 Online Courses</h2>
+
+<a href="https://coursera.org">Coursera</a>
+<a href="https://edx.org">edX</a>
+<a href="https://udemy.com">Udemy</a>
+<a href="https://swayam.gov.in">SWAYAM</a>
+<a href="https://futurelearn.com">FutureLearn</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+function toggleDark(){
+
+document.body.classList.toggle("dark")
+
+}
+
+function searchLinks(){
+
+let input=document.getElementById("search").value.toLowerCase()
+
+let links=document.querySelectorAll(".section a")
+
+links.forEach(link=>{
+
+if(link.innerText.toLowerCase().includes(input))
+
+link.style.display="block"
+
+else
+
+link.style.display="none"
+
+})
+
+}
+
+</script>
+
+</script>
+
+<footer style="text-align:center;
+padding:15px;
+background:#131414;
+color:white;
+margin-top:20px;">
+
+© 2026 OpenNotes. All rights are reserved.<br>
+Website Developed by Mohammad Sahil.
+
+</footer>
+
+</body>
+</html>
+</body>
+</html>
